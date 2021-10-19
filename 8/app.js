@@ -9,17 +9,9 @@ url = "https://api.funtranslations.com/translate/minion.json";
 
 function clickEventHandle() {
     fetch(url+ "?" + "text=" +inputText.value)
-    .then(response => response.status)
-    .then(status => {
-        if(status == 200){
-            outputText.innerText = "Status code is "+status+". Success";
-        }
-        else if(status == 404){
-            alert("Page not found")
-        }
-        else if(status == 401){
-            alert("You are not logged in")
-        }        
+    .then(response => response.text())
+    .then(json => {
+        outputText.innerText = json;
     }).catch(errorHandler)
 }
  
