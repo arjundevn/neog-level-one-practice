@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    background-image: url("https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/cdn/aea25d40-c600-4033-932d-149116c4630d/459f1236-dc39-4c0b-bf43-b01695560ca3.jpg");
+    font-family: 'Roboto', sans-serif;;
+
+}
+
+header {
+    padding: 1rem;
+    background-color: #fadc70;  
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: large;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    background-color: #FBBF24;
+}
